@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    --font: "Roboto", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    flex: 1;
+    color: white;
+    padding: 120px;
+    background-image: linear-gradient(to top, #080c2c, #565c96);
+  }
+  
+  h1 {
+    position: absolute;
+    left: 250px;
+    top: 60px;
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  /* playlist cover set up */
+  .cover {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    border-radius: 5px;
+  }
+  
+  /* playlist bio and info */
+  .description {
+    line-height: 1.5;
+    position: absolute;
+    left: 250px;
+    top: 130px;
+    font-weight: 100;
+    word-wrap: break-word;
+    padding-right: 20px;
+  }
+  
+  /* setting font */
+  h1,
+  .description {
+    font-family: var(--font);
+  }
+  
+  /* main flex setup */
+  main {
+    flex: 2;
+    color: white;
+    background-color: #2d2d2d;
+  }
+  
+  /* play svg */
+  .play {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 20px;
+    color: #1db954;
+  }
+  
+  /* heart svg */
+  .love {
+    position: relative;
+    height: 50px;
+    width: 60px;
+    left: 160px;
+    bottom: 60px;
+    color: white;
+  }
+  
+  /* for the line*/
+  .row-border {
+    border-top: 2px solid gray;
+    grid-column: 1 / 5;
+    width: 100%;
+  }
+  
+  /* the album images */
+  .album1,
+  .album2,
+  .album3 {
+    padding: 5px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  /* the album children - song and artist div */
+  .album1child,
+  .album2child,
+  .album3child {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+  }
+  
+  /* title number */
+  h8 {
+    font-size: 20px;
+  }
+  
+  .irischild,
+  .djchild,
+  .desirechild {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Static Template</title>
+    <style>
+      .grid {
+        display: grid;
+        width: 100%;
+        font-weight: 300;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4);
+        row-gap: 50px;
+        grid-column-gap: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <header>
+      <h1>currently</h1>
+
+      <img
+        class="cover"
+        src="https://i.pinimg.com/564x/b0/9a/d6/b09ad6aba553da1dfb7833da05842e45.jpg"
+        alt="Purple Aura"
+        width="160"
+        height="160"
+      />
+
+      <div class="description">
+        <div>enjoy :)<br /></div>
+        <div>
+          by <strong>Liz Lyon</strong> - 333 likes - 45 songs - 1hr 25mins
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- play button svg -->
+      <div class="play">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+      <!-- heart button svg -->
+      <div class="love">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+          />
+        </svg>
+      </div>
+
+      <div class="line"></div>
+
+      <!-- the grid -->
+      <div class="grid">
+        <div># TITLE</div>
+        <div>ALBUM</div>
+        <div>DATE ADDED</div>
+        <div>LENGTH</div>
+
+        <!-- row line -->
+        <div class="row-border"></div>
+
+        <!-- first song -->
+        <div class="iris">
+          <div class="irischild"><h8>1<h8></div>
+
+          <div class="album1"> 
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/e/e5/Goo_Goo_Dolls_-_Dizzy_Up_the_Girl.png"
+              alt="Dizzy up the Girl Album Cover"
+              width="50"
+              height="50"
+            />
+
+            <div class='album1child'>
+            <strong>Iris</strong><br />
+            The Goo Goo Dolls
+          </div>
+          </div>
+        </div>
+
+        <!-- album, date and length for song 1 -->
+        <div>Dizzy up the Girl</div>
+        <div>Jan 31st, 2022</div>
+        <div>4:49</div>
+
+        <!-- second song -->
+        <div class="dj">
+          <div class="djchild"><h8>2<h8></div>
+
+          <div class="album2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Taylor_Swift_-_Speak_Now_cover.png" alt="Speak Now Album Cover" width="50" height="50" />
+
+          <div class="album2child">
+            <strong>Dear John</strong><br />
+            Taylor Swift
+          </div>
+        </div>
+      </div>
+
+        <!-- album, date and length for song 2 -->
+        <div>Speak Now</div>
+        <div>12 days ago</div>
+        <div>6:43</div>
+
+        <!-- third song -->
+        <div class="desire">
+          <div class="desirechild"><h8>3<h8></div>
+
+          <div class='album3'>
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Scorpion_by_Drake.jpg" alt="Scorpion Album Cover" width="50" height="50" />
+            <div class="album3child">
+                <strong>Desires (with Future)</strong><br />
+                Drake, Future
+              </div>
+          </div>
+        </div>
+
+        <!-- album, date and length for song 3 -->
+        <div>Scorpion</div>
+        <div>1 day ago</div>
+        <div>3:57</div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
